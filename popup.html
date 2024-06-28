@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GreenChain Bank Extension</title>
+  <style>
+    body {
+      background-color: black;
+      color: green;
+      border: 2mm ridge rgba(226, 237, 15, 0.728);
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GreenChain Bank</h1>
+  <button id="createWallet">Create Wallet</button>
+  <button id="importWallet">Import Wallet</button>
+  <div id="walletInfo"></div>
+  <div>
+    <input type="text" id="recipientAddress" placeholder="Recipient Address">
+    <input type="number" id="amount" placeholder="Amount">
+    <button id="sendTransaction">Send Transaction</button>
+  </div>
+  <!-- Include ethers.js library locally -->
+  <script src="lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
